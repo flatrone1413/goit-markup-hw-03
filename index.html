@@ -3,12 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--Normalize-->
+    <!--Styles-->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.css"
+      integrity="sha512-gnAN+RgTMylunXI7AMg+PtcUGpKZFkZJoFIkAWvdPFRrFJz3p2tx4+9xbjILRfN7CzoViMgS8vSf06fSQzWZjA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
-    <!--Styles.css-->
     <link rel="stylesheet" href="css/styles.css" />
     <!--Google Fonts Roboto&Raleway-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,19 +23,20 @@
   </head>
   <body>
     <!--Header-->
-    <header>
-      <nav>
+    <header class="header">
+      <div class="header-div1 , container">
+      <nav class="navigation">
         <a href="./index.html" class="logo-main"
           >Web<span class="logo-span">Studio</span></a
         >
-        <ul>
+        <ul class="nav-list">
           <li><a href="./index.html" class="nav-links">Studio</a></li>
           <li><a href="" class="nav-links">Portfolio</a></li>
           <li><a href="" class="nav-links">Contacts</a></li>
         </ul>
       </nav>
       <address class="adresler">
-        <ul>
+        <ul class="nav-list">
           <li>
             <a href="info@devstudio.com" class="info">info@devstudio.com</a>
           </li>
@@ -42,6 +45,7 @@
           </li>
         </ul>
       </address>
+    </div>
     </header>
     <!--Header Bitti-->
     <main>
@@ -136,7 +140,10 @@
           </li>
           <li>
             <img
-              src="./images/img_8.jpg" alt="Screen Illustrations" width="360" />
+              src="./images/img_8.jpg"
+              alt="Screen Illustrations"
+              width="360"
+            />
             <h3 class="jobs-name">Screen Illustrations</h3>
             <p class="category">Design</p>
           </li>
