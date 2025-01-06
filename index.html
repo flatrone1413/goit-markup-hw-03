@@ -4,13 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Styles-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.css"
-      integrity="sha512-gnAN+RgTMylunXI7AMg+PtcUGpKZFkZJoFIkAWvdPFRrFJz3p2tx4+9xbjILRfN7CzoViMgS8vSf06fSQzWZjA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="css/modern-normalize.min.css">
     <link rel="stylesheet" href="css/styles.css" />
     <!--Google Fonts Roboto&Raleway-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -24,7 +18,8 @@
   <body>
     <!--Header-->
     <header class="header">
-      <div class="header-div1 , container">
+      <!--Div-Navigation-->
+      <div class="div-one , container">
       <nav class="navigation">
         <a href="./index.html" class="logo-main"
           >Web<span class="logo-span">Studio</span></a
@@ -47,39 +42,41 @@
       </address>
     </div>
     </header>
-    <!--Header Bitti-->
     <main>
       <!--Section 1-->
       <section class="section-one">
+        <div class="container">
         <h1 class="title-one">Effective Solutions for Your Business</h1>
         <button type="button" class="order-button">Order Service</button>
+      </div>
       </section>
       <!--Section 2-->
       <section class="section-two">
-        <h2></h2>
-        <ul>
-          <li>
+        <div class="container">
+        <h2 class="visually-hidden"></h2>
+        <ul class="job-list">
+          <li class="job-list-li">
             <h3 class="job-title">Strategy</h3>
             <p class="job-def">
               Our goal is to identify the business problem to walk away with the
               perfect and creative solution.
             </p>
           </li>
-          <li>
+          <li class="job-list-li">
             <h3 class="job-title">Punctuality</h3>
             <p class="job-def">
               Bring the key message to the brand's audience for the best price
               within the shortest possible time.
             </p>
           </li>
-          <li>
+          <li class="job-list-li">
             <h3 class="job-title">Diligence</h3>
             <p class="job-def">
               Research and confirm brands that present the strongest digital
               growth opportunities and minimize risk.
             </p>
           </li>
-          <li>
+          <li class="job-list-li">
             <h3 class="job-title">Technologies</h3>
             <p class="job-def">
               Design practice focused on digital experiences. We bring forth a
@@ -87,75 +84,101 @@
             </p>
           </li>
         </ul>
+      </div>
       </section>
       <!--Section 3-->
       <section class="section-three">
+        <div class="container">
         <h2 class="our-team">Our Team</h2>
-        <ul>
+        <ul class="section-three-ul">
           <li class="teammates">
             <img src="./images/img.jpg" alt="Mark Guerrero" width="264" />
+            <div class="div-teammates">
             <h3 class="isimler">Mark Guerrero</h3>
             <p class="job">Product Designer</p>
+          </div>
           </li>
           <li class="teammates">
             <img src="./images/img_1.jpg" alt="Tom Ford" width="264" />
+            <div class="div-teammates">
             <h3 class="isimler">Tom Ford</h3>
             <p class="job">Frontend Developer</p>
+          </div>
           </li>
           <li class="teammates">
             <img src="./images/img_2.jpg" alt="Camila Garcia" width="264" />
+            <div class="div-teammates">
             <h3 class="isimler">Camila Garcia</h3>
             <p class="job">Marketing</p>
+          </div>
           </li>
           <li class="teammates">
             <img src="./images/img_3.jpg" alt="Daniel Wilson" width="264" />
+            <div class="div-teammates">
             <h3 class="isimler">Daniel Wilson</h3>
             <p class="job">UI Designer</p>
+          </div>
           </li>
         </ul>
+      </div>
       </section>
       <!--Section 4-->
       <section class="section-four">
+        <div class="container">
         <h2 class="our-portfolio">Our Portfolio</h2>
-        <ul>
-          <li>
+        <ul class="section-four-ul">
+          <li class="section-four-li">
             <img src="./images/img_4.jpg" alt="Banking App" width="360" />
+            <div class="div-jobname">
             <h3 class="jobs-name">Banking App</h3>
             <p class="category">App</p>
+          </div>
           </li>
-          <li>
+          <li class="section-four-li">
             <img src="./images/img_5.jpg" alt="Cashless Payment" width="360" />
+            <div class="div-jobname">
             <h3 class="jobs-name">Cashless Payment</h3>
             <p class="category">Marketing</p>
+          </div>
           </li>
-          <li>
+          <li class="section-four-li">
             <img src="./images/img_6.jpg" alt="Meditation App" width="360" />
+            <div class="div-jobname">
             <h3 class="jobs-name">Meditation App</h3>
             <p class="category">App</p>
+          </div>
           </li>
-          <li>
+          <li class="section-four-li">
             <img src="./images/img_7.jpg" alt="Taxi Service" width="360" />
+            <div class="div-jobname">
             <h3 class="jobs-name">Taxi Service</h3>
             <p class="category">Marketing</p>
+          </div>
           </li>
-          <li>
+          <li class="section-four-li">
             <img
               src="./images/img_8.jpg"
               alt="Screen Illustrations"
               width="360"
             />
+            <div class="div-jobname">
             <h3 class="jobs-name">Screen Illustrations</h3>
             <p class="category">Design</p>
+          </div>
           </li>
-          <li>
+          <li class="section-four-li">
             <img src="./images/img_9.jpg" alt="Online Courses" width="360" />
+            <div class="div-jobname">
             <h3 class="jobs-name">Online Courses</h3>
             <p class="category">Marketing</p>
+          </div>
           </li>
         </ul>
+      </div>
       </section>
       <!--Footer-->
       <footer class="footer">
+        <div class="container">
         <a href="./index.html" class="logo-main"
           >Web<span class="logo-span">Studio</span></a
         >
@@ -163,6 +186,7 @@
           Increase the flow of customers and sales for your business with
           digital marketing & growth solutions.
         </p>
+      </div>
       </footer>
     </main>
   </body>

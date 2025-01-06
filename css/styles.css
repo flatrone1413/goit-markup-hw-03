@@ -3,6 +3,11 @@ body{
     background-color: #FFFFFF;
     font-family: "Roboto", sans-serif;
 }
+
+img{
+    display: block;
+}
+
 ul{
     list-style-type: none;
 }
@@ -16,8 +21,9 @@ header.header{
     border-bottom: 1px solid #e7e9fc;
 }
 
-header div.header-div1{
+header div.div-one{
     display: flex;
+    justify-content: space-between;
 }
 
 header div nav.navigation{
@@ -71,6 +77,7 @@ a.info:focus{
 
 main .section-one{
     background-color: #2e2f42;
+    padding: 188px 0;
 }
 main .section-one h1.title-one{
     font-size: 56px;
@@ -78,6 +85,8 @@ main .section-one h1.title-one{
     text-align: center;
     letter-spacing: 0.02em;
     color: #ffffff;
+    max-width: 496px;
+    margin: 0 auto;
 }
 main .section-one button.order-button{
     background-color: #4D5AE5;
@@ -88,10 +97,30 @@ main .section-one button.order-button{
     letter-spacing: 0.04em;
     color: #ffffff;
     cursor: pointer;
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 auto;
 }
 main .section-one button.order-button:hover,
 main .section-one button.order-button:focus{
     background-color: #404BBF;
+}
+main .section-two{
+    padding: 120px 0;
+}
+main section .div-two{  
+}
+main .section-two ul.job-list{
+    display: flex;
+    gap: 24px;
+}
+main .section-two ul li.job-list-li{
+    width: calc((100% - 72px) / 4);
+
 }
 main .section-two ul li h3.job-title{
     font-weight: 500;
@@ -99,6 +128,7 @@ main .section-two ul li h3.job-title{
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 main .section-two ul li p.job-def{
     font-size: 16px;
@@ -108,6 +138,7 @@ main .section-two ul li p.job-def{
 }
 .section-three{
     background-color: #f4f4fd;
+    padding: 120px 0;
 }
 .section-three .our-team{
     font-size: 36px;
@@ -116,9 +147,22 @@ main .section-two ul li p.job-def{
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2e2f42;
+    margin-bottom: 72px;
+}
+.section-three div ul.section-three-ul{
+    display: flex;
+    gap: 24px;
 }
 .section-three ul li.teammates{
     background-color: #FFFFFF;
+    width: calc((100% - 72px) / 4);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.section-three ul li div.div-teammates{
+    padding: 32px 0;
 }
 .section-three ul li h3.isimler{
     font-weight: 500;
@@ -126,12 +170,19 @@ main .section-two ul li p.job-def{
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    text-align: center;
+    margin-bottom: 8px;
 }
 .section-three ul li p.job{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    text-align: center;
+}
+
+.section-four{
+    padding: 120px 0;
 }
 
 .section-four h2.our-portfolio{
@@ -141,6 +192,22 @@ main .section-two ul li p.job-def{
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2e2f42;
+    margin-bottom: 72px;
+}
+.section-four ul.section-four-ul{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+.section-four ul li.section-four-li{
+    width: calc((100% - 72px) / 4);
+}
+.section-four ul li div.div-jobname{
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+    margin-bottom: 8px;
 }
 .section-four ul li h3.jobs-name{
     font-weight: 500;
@@ -159,6 +226,7 @@ main .section-two ul li p.job-def{
 
 footer.footer{
     background-color: #2e2f42;
+    padding: 100px 0;
 }
 
 footer .logo-main{
@@ -169,6 +237,8 @@ footer .logo-main{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 footer .logo-span{
@@ -179,4 +249,5 @@ footer p.footer-pragraf{
     line-height: 1.5;
     color: #F4F4FD;
     letter-spacing: 0.02em;
+    max-width: 264px;
 }
